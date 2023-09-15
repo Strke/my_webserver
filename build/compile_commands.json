@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lin/CPP/WebServer/build/threadpool",
+  "command": "/usr/bin/g++   -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool  -g   -o CMakeFiles/threadpool.dir/threadpool.cpp.o -c /home/lin/CPP/WebServer/threadpool/threadpool.cpp",
+  "file": "/home/lin/CPP/WebServer/threadpool/threadpool.cpp"
+}
+]

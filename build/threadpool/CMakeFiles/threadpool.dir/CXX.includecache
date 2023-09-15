@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../locker/locker.h
+exception
+-
+pthread.h
+-
+semaphore.h
+-
+
+/home/lin/CPP/WebServer/threadpool/threadpool.cpp
+threadpool.h
+/home/lin/CPP/WebServer/threadpool/threadpool.h
+
+/home/lin/CPP/WebServer/threadpool/threadpool.h
+list
+-
+cstdio
+-
+exception
+-
+pthread.h
+-
+locker.h
+/home/lin/CPP/WebServer/threadpool/locker.h
+
