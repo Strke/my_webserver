@@ -36,14 +36,8 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 4,
+				"line" : 6,
 				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 4,
-				"parent" : 0
 			}
 		]
 	},
@@ -63,8 +57,12 @@
 					"path" : "/home/lin/CPP/WebServer/locker"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "/home/lin/CPP/WebServer/threadpool"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/lin/CPP/WebServer/http_conn"
 				}
 			],
 			"language" : "CXX",

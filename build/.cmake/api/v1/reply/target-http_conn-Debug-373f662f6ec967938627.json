@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/lin/CPP/WebServer/lib/libhttpconn.so"
+			"path" : "/home/lin/CPP/WebServer/lib/libhttp_conn.so"
 		}
 	],
 	"backtrace" : 1,
@@ -35,14 +35,8 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 4,
+				"line" : 6,
 				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 4,
-				"parent" : 0
 			}
 		]
 	},
@@ -58,7 +52,7 @@
 			"defines" : 
 			[
 				{
-					"define" : "httpconn_EXPORTS"
+					"define" : "http_conn_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -68,7 +62,11 @@
 					"path" : "/home/lin/CPP/WebServer/locker"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
+					"path" : "/home/lin/CPP/WebServer/threadpool"
+				},
+				{
+					"backtrace" : 3,
 					"path" : "/home/lin/CPP/WebServer/http_conn"
 				}
 			],
@@ -79,7 +77,7 @@
 			]
 		}
 	],
-	"id" : "httpconn::@6e0ab5c4cc1ed1118d7e",
+	"id" : "http_conn::@6e0ab5c4cc1ed1118d7e",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -91,8 +89,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "httpconn",
-	"nameOnDisk" : "libhttpconn.so",
+	"name" : "http_conn",
+	"nameOnDisk" : "libhttp_conn.so",
 	"paths" : 
 	{
 		"build" : "http_conn",

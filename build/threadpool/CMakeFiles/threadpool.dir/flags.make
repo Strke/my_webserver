@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool 
+CXX_INCLUDES = -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool -I/home/lin/CPP/WebServer/http_conn 
 

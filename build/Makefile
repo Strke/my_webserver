@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
 # Target rules for targets named threadpool
 
 # Build rule for target.
@@ -124,17 +137,44 @@ threadpool/fast:
 .PHONY : threadpool/fast
 
 #=============================================================================
-# Target rules for targets named httpconn
+# Target rules for targets named http_conn
 
 # Build rule for target.
-httpconn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 httpconn
-.PHONY : httpconn
+http_conn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_conn
+.PHONY : http_conn
 
 # fast build rule for target.
-httpconn/fast:
-	$(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/build
-.PHONY : httpconn/fast
+http_conn/fast:
+	$(MAKE) -f http_conn/CMakeFiles/http_conn.dir/build.make http_conn/CMakeFiles/http_conn.dir/build
+.PHONY : http_conn/fast
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -144,8 +184,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... server"
 	@echo "... threadpool"
-	@echo "... httpconn"
+	@echo "... http_conn"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

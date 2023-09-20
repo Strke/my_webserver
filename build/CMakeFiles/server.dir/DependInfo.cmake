@@ -4,17 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lin/CPP/WebServer/src/test.cpp" "/home/lin/CPP/WebServer/build/CMakeFiles/a.dir/src/test.cpp.o"
+  "/home/lin/CPP/WebServer/main.cpp" "/home/lin/CPP/WebServer/build/CMakeFiles/server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+  "../locker"
+  "../threadpool"
+  "../http_conn"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/lin/CPP/WebServer/build/threadpool/CMakeFiles/threadpool.dir/DependInfo.cmake"
+  "/home/lin/CPP/WebServer/build/http_conn/CMakeFiles/http_conn.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-http_conn/CMakeFiles/httpconn.dir/rule:
-	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/CMakeFiles/httpconn.dir/rule
-.PHONY : http_conn/CMakeFiles/httpconn.dir/rule
+http_conn/CMakeFiles/http_conn.dir/rule:
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/CMakeFiles/http_conn.dir/rule
+.PHONY : http_conn/CMakeFiles/http_conn.dir/rule
 
 # Convenience name for target.
-httpconn: http_conn/CMakeFiles/httpconn.dir/rule
+http_conn: http_conn/CMakeFiles/http_conn.dir/rule
 
-.PHONY : httpconn
+.PHONY : http_conn
 
 # fast build rule for target.
-httpconn/fast:
-	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/build
-.PHONY : httpconn/fast
+http_conn/fast:
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/http_conn.dir/build.make http_conn/CMakeFiles/http_conn.dir/build
+.PHONY : http_conn/fast
 
 http_conn.o: http_conn.cpp.o
 
@@ -131,7 +131,7 @@ http_conn.o: http_conn.cpp.o
 
 # target to build an object file
 http_conn.cpp.o:
-	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.o
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/http_conn.dir/build.make http_conn/CMakeFiles/http_conn.dir/http_conn.cpp.o
 .PHONY : http_conn.cpp.o
 
 http_conn.i: http_conn.cpp.i
@@ -140,7 +140,7 @@ http_conn.i: http_conn.cpp.i
 
 # target to preprocess a source file
 http_conn.cpp.i:
-	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.i
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/http_conn.dir/build.make http_conn/CMakeFiles/http_conn.dir/http_conn.cpp.i
 .PHONY : http_conn.cpp.i
 
 http_conn.s: http_conn.cpp.s
@@ -149,7 +149,7 @@ http_conn.s: http_conn.cpp.s
 
 # target to generate assembly for a file
 http_conn.cpp.s:
-	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.s
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/http_conn.dir/build.make http_conn/CMakeFiles/http_conn.dir/http_conn.cpp.s
 .PHONY : http_conn.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... httpconn"
+	@echo "... http_conn"
 	@echo "... http_conn.o"
 	@echo "... http_conn.i"
 	@echo "... http_conn.s"

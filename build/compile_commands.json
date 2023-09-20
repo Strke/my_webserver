@@ -1,12 +1,17 @@
 [
 {
+  "directory": "/home/lin/CPP/WebServer/build",
+  "command": "/usr/bin/g++   -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool -I/home/lin/CPP/WebServer/http_conn  -g   -o CMakeFiles/server.dir/main.cpp.o -c /home/lin/CPP/WebServer/main.cpp",
+  "file": "/home/lin/CPP/WebServer/main.cpp"
+},
+{
   "directory": "/home/lin/CPP/WebServer/build/threadpool",
-  "command": "/usr/bin/g++   -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool  -g   -o CMakeFiles/threadpool.dir/threadpool.cpp.o -c /home/lin/CPP/WebServer/threadpool/threadpool.cpp",
+  "command": "/usr/bin/g++   -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool -I/home/lin/CPP/WebServer/http_conn  -g   -o CMakeFiles/threadpool.dir/threadpool.cpp.o -c /home/lin/CPP/WebServer/threadpool/threadpool.cpp",
   "file": "/home/lin/CPP/WebServer/threadpool/threadpool.cpp"
 },
 {
   "directory": "/home/lin/CPP/WebServer/build/http_conn",
-  "command": "/usr/bin/g++  -Dhttpconn_EXPORTS -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/http_conn  -g -fPIC   -o CMakeFiles/httpconn.dir/http_conn.cpp.o -c /home/lin/CPP/WebServer/http_conn/http_conn.cpp",
+  "command": "/usr/bin/g++  -Dhttp_conn_EXPORTS -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool -I/home/lin/CPP/WebServer/http_conn  -g -fPIC   -o CMakeFiles/http_conn.dir/http_conn.cpp.o -c /home/lin/CPP/WebServer/http_conn/http_conn.cpp",
   "file": "/home/lin/CPP/WebServer/http_conn/http_conn.cpp"
 }
 ]

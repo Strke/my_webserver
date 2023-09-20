@@ -4,18 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lin/CPP/WebServer/http_conn/http_conn.cpp" "/home/lin/CPP/WebServer/build/http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.o"
+  "/home/lin/CPP/WebServer/http_conn/http_conn.cpp" "/home/lin/CPP/WebServer/build/http_conn/CMakeFiles/http_conn.dir/http_conn.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "httpconn_EXPORTS"
+  "http_conn_EXPORTS"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../locker"
+  "../threadpool"
   "../http_conn"
   )
 

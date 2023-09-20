@@ -1170,30 +1170,6 @@
 			"value" : "/home/lin/CPP/WebServer"
 		},
 		{
-			"name" : "test_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/lin/CPP/WebServer/build"
-		},
-		{
-			"name" : "test_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/lin/CPP/WebServer"
-		},
-		{
 			"name" : "threadpool_BINARY_DIR",
 			"properties" : 
 			[

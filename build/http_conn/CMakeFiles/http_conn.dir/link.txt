@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g  -shared -Wl,-soname,libhttp_conn.so -o ../../lib/libhttp_conn.so CMakeFiles/http_conn.dir/http_conn.cpp.o 

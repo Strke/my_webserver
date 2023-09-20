@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_FLAGS = -g -fPIC  
 
-CXX_DEFINES = -Dhttpconn_EXPORTS
+CXX_DEFINES = -Dhttp_conn_EXPORTS
 
-CXX_INCLUDES = -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/http_conn 
+CXX_INCLUDES = -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool -I/home/lin/CPP/WebServer/http_conn 
 

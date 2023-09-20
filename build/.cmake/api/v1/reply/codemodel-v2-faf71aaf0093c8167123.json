@@ -16,7 +16,11 @@
 						"string" : "3.16"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
 				},
 				{
 					"build" : "threadpool",
@@ -29,7 +33,7 @@
 					"source" : "threadpool",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -60,7 +64,11 @@
 					[
 						0
 					],
-					"name" : "project"
+					"name" : "project",
+					"targetIndexes" : 
+					[
+						1
+					]
 				},
 				{
 					"directoryIndexes" : 
@@ -71,7 +79,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -91,15 +99,22 @@
 			[
 				{
 					"directoryIndex" : 2,
-					"id" : "httpconn::@6e0ab5c4cc1ed1118d7e",
-					"jsonFile" : "target-httpconn-Debug-b6611d6e4bec69e07c2b.json",
-					"name" : "httpconn",
+					"id" : "http_conn::@6e0ab5c4cc1ed1118d7e",
+					"jsonFile" : "target-http_conn-Debug-373f662f6ec967938627.json",
+					"name" : "http_conn",
 					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-Debug-317a8fbfe4295f9fa860.json",
+					"name" : "server",
+					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "threadpool::@ab388a9d5d44778f31a5",
-					"jsonFile" : "target-threadpool-Debug-ed3a4082a23f80897318.json",
+					"jsonFile" : "target-threadpool-Debug-44d0bad6395b1a16097f.json",
 					"name" : "threadpool",
 					"projectIndex" : 1
 				}

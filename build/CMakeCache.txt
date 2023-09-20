@@ -221,12 +221,6 @@ project_BINARY_DIR:STATIC=/home/lin/CPP/WebServer/build
 project_SOURCE_DIR:STATIC=/home/lin/CPP/WebServer
 
 //Value Computed by CMake
-test_BINARY_DIR:STATIC=/home/lin/CPP/WebServer/build
-
-//Value Computed by CMake
-test_SOURCE_DIR:STATIC=/home/lin/CPP/WebServer
-
-//Value Computed by CMake
 threadpool_BINARY_DIR:STATIC=/home/lin/CPP/WebServer/build/threadpool
 
 //Value Computed by CMake
