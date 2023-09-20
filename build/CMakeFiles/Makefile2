@@ -54,18 +54,39 @@ CMAKE_BINARY_DIR = /home/lin/CPP/WebServer/build
 
 # The main recursive "all" target.
 all: threadpool/all
+all: http_conn/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: threadpool/preinstall
+preinstall: http_conn/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: threadpool/clean
+clean: http_conn/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory http_conn
+
+# Recursive "all" directory target.
+http_conn/all: http_conn/CMakeFiles/httpconn.dir/all
+
+.PHONY : http_conn/all
+
+# Recursive "preinstall" directory target.
+http_conn/preinstall:
+
+.PHONY : http_conn/preinstall
+
+# Recursive "clean" directory target.
+http_conn/clean: http_conn/CMakeFiles/httpconn.dir/clean
+
+.PHONY : http_conn/clean
 
 #=============================================================================
 # Directory level rules for directory threadpool
@@ -92,7 +113,7 @@ threadpool/clean: threadpool/CMakeFiles/threadpool.dir/clean
 threadpool/CMakeFiles/threadpool.dir/all:
 	$(MAKE) -f threadpool/CMakeFiles/threadpool.dir/build.make threadpool/CMakeFiles/threadpool.dir/depend
 	$(MAKE) -f threadpool/CMakeFiles/threadpool.dir/build.make threadpool/CMakeFiles/threadpool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lin/CPP/WebServer/build/CMakeFiles --progress-num=1,2 "Built target threadpool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lin/CPP/WebServer/build/CMakeFiles --progress-num=3,4 "Built target threadpool"
 .PHONY : threadpool/CMakeFiles/threadpool.dir/all
 
 # Build rule for subdir invocation for target.
@@ -111,6 +132,33 @@ threadpool: threadpool/CMakeFiles/threadpool.dir/rule
 threadpool/CMakeFiles/threadpool.dir/clean:
 	$(MAKE) -f threadpool/CMakeFiles/threadpool.dir/build.make threadpool/CMakeFiles/threadpool.dir/clean
 .PHONY : threadpool/CMakeFiles/threadpool.dir/clean
+
+#=============================================================================
+# Target rules for target http_conn/CMakeFiles/httpconn.dir
+
+# All Build rule for target.
+http_conn/CMakeFiles/httpconn.dir/all:
+	$(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/depend
+	$(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lin/CPP/WebServer/build/CMakeFiles --progress-num=1,2 "Built target httpconn"
+.PHONY : http_conn/CMakeFiles/httpconn.dir/all
+
+# Build rule for subdir invocation for target.
+http_conn/CMakeFiles/httpconn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/CPP/WebServer/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 http_conn/CMakeFiles/httpconn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/CPP/WebServer/build/CMakeFiles 0
+.PHONY : http_conn/CMakeFiles/httpconn.dir/rule
+
+# Convenience name for target.
+httpconn: http_conn/CMakeFiles/httpconn.dir/rule
+
+.PHONY : httpconn
+
+# clean rule for target.
+http_conn/CMakeFiles/httpconn.dir/clean:
+	$(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/clean
+.PHONY : http_conn/CMakeFiles/httpconn.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

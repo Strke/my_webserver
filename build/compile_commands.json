@@ -3,5 +3,10 @@
   "directory": "/home/lin/CPP/WebServer/build/threadpool",
   "command": "/usr/bin/g++   -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/threadpool  -g   -o CMakeFiles/threadpool.dir/threadpool.cpp.o -c /home/lin/CPP/WebServer/threadpool/threadpool.cpp",
   "file": "/home/lin/CPP/WebServer/threadpool/threadpool.cpp"
+},
+{
+  "directory": "/home/lin/CPP/WebServer/build/http_conn",
+  "command": "/usr/bin/g++   -I/home/lin/CPP/WebServer/locker -I/home/lin/CPP/WebServer/http_conn  -g   -o CMakeFiles/httpconn.dir/http_conn.cpp.o -c /home/lin/CPP/WebServer/http_conn/http_conn.cpp",
+  "file": "/home/lin/CPP/WebServer/http_conn/http_conn.cpp"
 }
 ]

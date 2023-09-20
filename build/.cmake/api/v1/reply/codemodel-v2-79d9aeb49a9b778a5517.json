@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -28,6 +29,20 @@
 					"source" : "threadpool",
 					"targetIndexes" : 
 					[
+						1
+					]
+				},
+				{
+					"build" : "http_conn",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "http_conn",
+					"targetIndexes" : 
+					[
 						0
 					]
 				}
@@ -38,7 +53,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -55,12 +71,31 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "http_conn",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
 						0
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 2,
+					"id" : "httpconn::@6e0ab5c4cc1ed1118d7e",
+					"jsonFile" : "target-httpconn-Debug-a9c659c54ac16e784291.json",
+					"name" : "httpconn",
+					"projectIndex" : 2
+				},
 				{
 					"directoryIndex" : 1,
 					"id" : "threadpool::@ab388a9d5d44778f31a5",

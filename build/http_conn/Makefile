@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/CPP/WebServer/build/CMakeFiles /home/lin/CPP/WebServer/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/lin/CPP/WebServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lin/CPP/WebServer/build/CMakeFiles /home/lin/CPP/WebServer/build/http_conn/CMakeFiles/progress.marks
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/CPP/WebServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lin/CPP/WebServer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named threadpool
+# Convenience name for target.
+http_conn/CMakeFiles/httpconn.dir/rule:
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f CMakeFiles/Makefile2 http_conn/CMakeFiles/httpconn.dir/rule
+.PHONY : http_conn/CMakeFiles/httpconn.dir/rule
 
-# Build rule for target.
-threadpool: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 threadpool
-.PHONY : threadpool
+# Convenience name for target.
+httpconn: http_conn/CMakeFiles/httpconn.dir/rule
 
-# fast build rule for target.
-threadpool/fast:
-	$(MAKE) -f threadpool/CMakeFiles/threadpool.dir/build.make threadpool/CMakeFiles/threadpool.dir/build
-.PHONY : threadpool/fast
-
-#=============================================================================
-# Target rules for targets named httpconn
-
-# Build rule for target.
-httpconn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 httpconn
 .PHONY : httpconn
 
 # fast build rule for target.
 httpconn/fast:
-	$(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/build
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/build
 .PHONY : httpconn/fast
+
+http_conn.o: http_conn.cpp.o
+
+.PHONY : http_conn.o
+
+# target to build an object file
+http_conn.cpp.o:
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.o
+.PHONY : http_conn.cpp.o
+
+http_conn.i: http_conn.cpp.i
+
+.PHONY : http_conn.i
+
+# target to preprocess a source file
+http_conn.cpp.i:
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.i
+.PHONY : http_conn.cpp.i
+
+http_conn.s: http_conn.cpp.s
+
+.PHONY : http_conn.s
+
+# target to generate assembly for a file
+http_conn.cpp.s:
+	cd /home/lin/CPP/WebServer/build && $(MAKE) -f http_conn/CMakeFiles/httpconn.dir/build.make http_conn/CMakeFiles/httpconn.dir/http_conn.cpp.s
+.PHONY : http_conn.cpp.s
 
 # Help Target
 help:
@@ -144,8 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... threadpool"
 	@echo "... httpconn"
+	@echo "... http_conn.o"
+	@echo "... http_conn.i"
+	@echo "... http_conn.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lin/CPP/WebServer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
