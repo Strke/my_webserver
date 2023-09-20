@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/lin/CPP/WebServer/lib/libhttpconn.a"
+			"path" : "/home/lin/CPP/WebServer/lib/libhttpconn.so"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +52,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g  "
+					"fragment" : "-g -fPIC  "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "httpconn_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -75,8 +80,19 @@
 		}
 	],
 	"id" : "httpconn::@6e0ab5c4cc1ed1118d7e",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "httpconn",
-	"nameOnDisk" : "libhttpconn.a",
+	"nameOnDisk" : "libhttpconn.so",
 	"paths" : 
 	{
 		"build" : "http_conn",
@@ -101,5 +117,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

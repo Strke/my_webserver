@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../../lib/libhttpconn.a"
   "../../lib/libhttpconn.pdb"
+  "../../lib/libhttpconn.so"
   "CMakeFiles/httpconn.dir/http_conn.cpp.o"
 )
 
