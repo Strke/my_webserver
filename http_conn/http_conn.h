@@ -81,11 +81,15 @@ private:
 
     /*以下供process_write调用来填充HTTP应答*/
     void unmap();
-    /*kkk*/
-    bool add_response(const char* format);
+    /*往写缓冲中写入待发送的数据*/
+    bool add_response(const char* format, ...);
+    /*往写缓冲中写入HTTP请求回复的内容*/
     bool add_content(const char* content);
+    /*往写缓冲总写入状态行*/
     bool add_status_line(int status, const char* title);
+    /*往写缓冲中写入HTTP请求头*/
     bool add_headers(int content_length);
+    /*往写缓冲中写入回复内容的长度*/
     bool add_content_length(int content_line);
     bool add_linger();
     bool add_blank_line();
